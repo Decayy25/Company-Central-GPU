@@ -1,6 +1,6 @@
 
 
-export default function about_us () {
+export default function home () {
     return (
         <>
             
