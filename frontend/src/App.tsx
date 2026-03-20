@@ -30,7 +30,7 @@ export default function App() {
     <>
     <header />
     <Routes>
-      <Route path="/" element={<home />} />
+      <Route path="/" element={<about_us />} />
 
     </Routes>
     <footer />
