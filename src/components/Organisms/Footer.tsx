@@ -1,31 +1,10 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import Logo from "../assets/Logo.png";
+import Logo from "../../assets/material/Logo.png";
 import feather from "feather-icons";
 import "devicon/devicon.min.css";
 
-// payment method logo
-import dana from "../assets/payment/dana.png";
-import ovo from "../assets/payment/ovo.png";
-import gopay from "../assets/payment/gopay.png";
-import bca from "../assets/payment/bca.png";
-import bni from "../assets/payment/bni.png";
-import bri from "../assets/payment/bri.png";
-import mandiri from "../assets/payment/mandiri.png";
-import indomart from "../assets/payment/indomart.png";
-import alfamart from "../assets/payment/alfamart.png";
 
-const paymentMethods = {
-  dana: dana,
-  ovo: ovo,
-  gopay: gopay,
-  bca: bca,
-  bni: bni,
-  bri: bri,
-  mandiri: mandiri,
-  indomart: indomart,
-  alfamart: alfamart,
-};
 export default function Footer() {
   useEffect(() => {
     feather.replace();
@@ -37,6 +16,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
 
+          {/* Logo Footer */}
           <div>
             <img src={Logo} alt="Central GPU Logo" className="w-40 h-40 mb-4" />
 
@@ -76,25 +56,6 @@ export default function Footer() {
                   Syarat & Ketentuan
                 </Link>
               </li>
-            </ul>
-          </div>
-
-          {/* Pembayaran */}
-          <div>
-            <h3 className="text-xl text-gray-800 font-bold mb-4 pb-2 border-b-2 border-[#6abea7]">
-              Pembayaran
-            </h3>
-
-            <ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 items-center">
-              {Object.entries(paymentMethods).map(([key, src]) => (
-                <li key={key}>
-                  <img 
-                    src={src} 
-                    alt={key} 
-                    className="flex items-center justify-center p-2 bg-white rounded-md shadow-sm" 
-                    />
-                </li>
-              ))}
             </ul>
           </div>
 

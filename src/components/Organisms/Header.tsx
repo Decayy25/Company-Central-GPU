@@ -1,13 +1,12 @@
 import { useState } from "react";
 
-import logo from "../assets/Logo-Header.png";
-import "../App.css";
+import logo from "../../assets/material/Logo-Header.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full bg-slate-600 text-[#bdfffd]">
+    <header className="w-full bg-slate-600 text-[#bdfffd] top-0 z-40 fixed">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         
         {/* Logo */}
@@ -17,10 +16,9 @@ export default function Header() {
 
         {/* Menu Desktop */}
         <nav className="hidden md:flex gap-8 text-lg">
-          <a href="#" className="hover:text-[#589c00] transition">About Us</a>
-          <a href="#" className="hover:text-[#589c00] transition">Portfolio</a>
-          <a href="#" className="hover:text-[#589c00] transition">Visi Misi</a>
-          <a href="#" className="hover:text-[#589c00] transition">Contact</a>
+          <a href="#" className="hover:text-[#589c00] transition">About</a>
+          <a href="#" className="hover:text-[#589c00] transition">Work</a>
+          <a href="#" className="hover:text-[#589c00] transition">Tech</a>
         </nav>
 
         {/* Hamburger Button */}
@@ -37,10 +35,9 @@ export default function Header() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-slate-700 px-6 py-4 space-y-3 text-lg">
-          <a href="#" className="block hover:text-teal-300">About Us</a>
-          <a href="#" className="block hover:text-teal-300">Portfolio</a>
-          <a href="#" className="block hover:text-teal-300">Visi Misi</a>
-          <a href="#" className="block hover:text-teal-300">Contact</a>
+          <a href="#" className="block hover:text-teal-300">About</a>
+          <a href="#" className="block hover:text-teal-300">Work</a>
+          <a href="#" className="block hover:text-teal-300">Tech</a>
         </div>
       )}
     </header>

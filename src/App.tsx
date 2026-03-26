@@ -1,16 +1,13 @@
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
 import { Routes, Route } from "react-router-dom";
 
 // components
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import Header from "./components/Organisms/Header"
+import Footer from "./components/Organisms/Footer"
 // import LoadingScreen from "./components/LoadingScreen"
 
 // pages
-import AboutUs from './pages/AboutUs';
-
-// Style
-import './App.css'
+import About from './pages/About';
 
 export default function App() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -26,7 +23,7 @@ export default function App() {
       <Header />
       
       <Routes>
-        <Route path="/" element={<AboutUs />} />
+        <Route path="/" element={<About />} />
       </Routes>
 
       <Footer />
