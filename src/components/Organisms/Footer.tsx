@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import Logo from "../../assets/material/Logo.png";
+import Logo from "../Atoms/Logo"
+import LayoutList from "../Molecules/LayoutList"
 import feather from "feather-icons";
 import "devicon/devicon.min.css";
 
@@ -13,54 +14,33 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-[#ffff] text-gray-50 mt-12 border-t-2 border-[#5e6973]">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
+      <div className="max-w-7xl mx-20 px-4 md:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
 
           {/* Logo Footer */}
           <div>
-            <img src={Logo} alt="Central GPU Logo" className="w-40 h-40 mb-4" />
+            <Logo
+              size={"60 mb-4"}
+              border={"none"}
+            />
 
-            <h3 className="text-xl text-gray-800 font-bold mb-3 ml-5">
+            <h3 className="text-3xl text-gray-800 font-bold mb-3 ml-5 flex justify-center">
               Central GPU
             </h3>
           </div>
 
           {/* Layanan Pelanggan */}
-          <div>
+          <div className="mt-10">
             <h3 className="text-xl text-gray-800 font-bold mb-4 pb-2 border-b-2 border-[#6abea7]">
               Layanan Pelanggan
             </h3>
 
-            <ul className="space-y-2">
-
-              <li>
-                <Link to="/contact" className="text-gray-800 hover:text-[#589c00]">
-                  Hubungi Kami
-                </Link>
-              </li>
-
-              <li>
-                <Link to="#" className="text-gray-800 hover:text-[#589c00]">
-                  FAQ
-                </Link>
-              </li>
-
-              <li>
-                <Link to="#" className="text-gray-800 hover:text-[#589c00]">
-                  Kebijakan Privasi
-                </Link>
-              </li>
-
-              <li>
-                <Link to="#" className="text-gray-800 hover:text-[#589c00]">
-                  Syarat & Ketentuan
-                </Link>
-              </li>
-            </ul>
+            <LayoutList
+            />
           </div>
 
           {/* Ikuti Kami */}
-          <div>
+          <div className="mt-10">
             <h3 className="text-xl text-gray-800 font-bold mb-4 pb-2 border-b-2 border-[#6abea7]">
               Ikuti Kami
             </h3>
@@ -78,9 +58,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="border-t border-[#bdfffd] py-6 px-4 md:px-8">
-
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-
           <p className="text-green-100 text-sm">
             © 2026 Central GPU. All rights reserved.
           </p>

@@ -21,6 +21,12 @@ export default function AboutContainer (props) {
                     Title="Shop now"
                 />
             </div>
+
+            <div
+                className=""
+            >
+
+            </div>
         </Fragment>
     )
 }

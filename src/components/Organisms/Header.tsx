@@ -7,15 +7,15 @@ export default function Header() {
 
   return (
     <header className="w-full bg-slate-600 text-[#bdfffd] top-0 z-40 fixed">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between py-4">
         
         {/* Logo */}
         <div className="text-3xl font-bold tracking-wide flex items-center">
-          <img src={logo} className="w-64" />
+          <img src={logo} className="max-w-100" />
         </div>
 
         {/* Menu Desktop */}
-        <nav className="hidden md:flex gap-8 text-lg">
+        <nav className="hidden md:flex gap-8 text-2xl">
           <a href="#" className="hover:text-[#589c00] transition">About</a>
           <a href="#" className="hover:text-[#589c00] transition">Work</a>
           <a href="#" className="hover:text-[#589c00] transition">Tech</a>
