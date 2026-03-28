@@ -7,7 +7,7 @@ export default function Button(props){
         <Fragment>
             <div>
                 <button
-                    className={`bg-[var(--intel)] rounded-3xl text-xl p-2 mt-10 text-white 
+                    className={`bg-[var(--Intel)] rounded-3xl text-xl p-2 mt-10 text-white 
                         ${Hover} ${Width}`}
                 >
                     {Title}
