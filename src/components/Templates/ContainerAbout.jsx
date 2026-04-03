@@ -1,5 +1,5 @@
 import { Fragment } from "react"
-import Button from "../Atoms/button";
+import Button from "../Atoms/Buttonutton";
 
 export default function AboutContainer (props) {
     const { Color ,Border, Width ="max-w-7xl"  } = props;
