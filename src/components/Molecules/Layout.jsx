@@ -2,22 +2,22 @@ import { Fragment } from "react";
 import "../../index.css"
 
 export default function Layout (props) {
-    const {Text, Title, ColorText, grid = " "} = props;
+    const {Text, Title, ColorText, Width, grid = " "} = props;
     return (
         <Fragment>
-            <div 
-                className={`mx-auto px-40 py-20 bg-[#6abea7] border-b-10 
-                    border-[var(--Soft-Cyan)] rounded-3xl flex justify-center
-                    ${grid}`}
+            <div className={`mx-4 px-10 py-15 bg-[#6abea7] border-b-10 
+                border-(--Soft-Cyan) rounded-3xl flex flex-col items-center
+                ${grid} ${Width}`}
                 >
-                    <h1>
+                    <h1 className="mb-10 text-3xl font-semibold">
                         {Title}
                     </h1>
+
                     <p 
-                        className={`${ColorText} mb-10`}
+                        className={`${ColorText} mb-10 text-xl font-semibold`}
                     >
-                    {Text}
-                </p>
+                        {Text}
+                    </p>
             </div>
         </Fragment>
     )
