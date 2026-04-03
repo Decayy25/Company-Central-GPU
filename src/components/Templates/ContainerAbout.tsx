@@ -1,8 +1,14 @@
 import { Fragment } from "react"
-import Button from "../Atoms/Buttonutton";
+import Button from "../Atoms/Button";
 
-export default function AboutContainer (props) {
-    const { Color ,Border, Width ="max-w-7xl"  } = props;
+interface AboutContainerProps {
+    Color: string;
+    Border: string;
+    Width?: string;
+}
+
+export default function AboutContainer(props: AboutContainerProps) {
+    const { Color, Border, Width = "max-w-7xl" } = props;
 
     return (
         <Fragment>
@@ -22,5 +28,5 @@ export default function AboutContainer (props) {
                 />
             </div>
         </Fragment>
-    )
+    );
 }

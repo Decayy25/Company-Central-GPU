@@ -32,7 +32,7 @@ const LayoutAbout = [
     },
 ];
 
-export default function () {
+export default function AboutBlock () {
     return (
         <Fragment>
             <div className="flex justify-center">

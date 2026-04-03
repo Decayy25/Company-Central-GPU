@@ -10,8 +10,6 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowJs": true,
-    "checkJs": false,
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
