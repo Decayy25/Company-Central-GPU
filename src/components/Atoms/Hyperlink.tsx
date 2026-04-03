@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import { Fragment } from "react";
 
-export default function Hyperlink (props) {
+interface HyperlinkProps {
+    link: string;
+    text: string;
+    border: string;
+    name: string;
+}
+
+export default function Hyperlink (props: HyperlinkProps) {
     const { link, text, border, name} = props;
     return (
         <Fragment>
