@@ -20,8 +20,8 @@ export default function Footer() {
           {/* Logo Footer */}
           <div>
             <Logo
-              size={"60 mb-4"}
-              border={"none"}
+              size={60}
+              border="none"
             />
 
             <h3 className="text-3xl text-gray-800 font-bold mb-3 ml-5 flex justify-center">

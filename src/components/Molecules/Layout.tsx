@@ -1,8 +1,16 @@
 import { Fragment } from "react";
 import "../../index.css"
 
-export default function Layout (props) {
-    const {Text, Title, ColorText, Width, grid = " "} = props;
+interface LayoutProps {
+    Text: string;
+    Title: string;
+    ColorText: string;
+    Width: string;
+    grid?: string;
+}
+
+export default function Layout(props: LayoutProps) {
+    const { Text, Title, ColorText, Width, grid = " " } = props;
     return (
         <Fragment>
             <div className={`mx-4 px-10 py-15 bg-[#6abea7] border-b-10 

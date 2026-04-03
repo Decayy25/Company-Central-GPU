@@ -1,13 +1,19 @@
 import { Fragment } from "react";
 
-export default function Button(props){
+interface ButtonProps {
+    Hover: string;
+    Width: string;
+    Title: string;
+}
+
+export default function Button(props: ButtonProps){
     const { Hover, Width, Title } = props;
 
     return (
         <Fragment>
             <div>
                 <button
-                    className={`bg-[var(--Intel)] rounded-3xl text-xl p-2 mt-10 text-white 
+                    className={`bg-var(--Intel) rounded-3xl text-xl p-2 mt-10 text-white 
                         ${Hover} ${Width}`}
                 >
                     {Title}
