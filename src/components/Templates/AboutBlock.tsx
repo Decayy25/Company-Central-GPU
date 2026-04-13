@@ -8,8 +8,8 @@ const LayoutAbout = [
             teknologi dan ingin mengubah dunia menjadi lebih baik 
             dengan menyediakan platform untuk menghubungkan pembeli 
             dan penjual dalam satu komunitas.`, 
-        ColorText: "text-white", 
-        Width: "w-180" 
+        ColorText: "text-white text-xl", 
+        className: "w-150 h-80 text-(--Icy-Aqua)" 
     },
     { id: 2, 
         Title: "Posisi Kami",
@@ -17,8 +17,8 @@ const LayoutAbout = [
             Central GPU menawarkan pengalaman belanja online 
             komprehensif, dari berbagai pilihan produk untuk bereksplorasi, 
             dan layanan untuk selalu memenuhi kebutuhan konsumen tanpa hambatan.`, 
-        ColorText: "text-white", 
-        Width: "w-180" 
+        ColorText: "text-white text-xl",
+        className: "w-150 h-80 text-(--Icy-Aqua)" 
     },
     { id: 3, 
         Title: "Cara Kami Beroperasi",
@@ -26,9 +26,8 @@ const LayoutAbout = [
             bertindak, dan bereaksi terhadap situasi tertentu - pada dasarnya, 
             kami Simpel, Bahagia, dan Bersama-sama. Nilai-nilai utama ini selalu 
             terlihat dalam setiap langkah perjalanan Central GPU.`, 
-        ColorText: "text-white", 
-        grid: "md:col-span-2", 
-        Width: "w-370" 
+        ColorText: "text-white text-2xl", 
+        className: "md:col-span-2 w-310 h-70 text-(--Icy-Aqua)"
     },
 ];
 
@@ -36,15 +35,14 @@ export default function AboutBlock () {
     return (
         <Fragment>
             <div className="flex justify-center">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols gap-3">
                     {LayoutAbout.map((item) => (
                         <Layout
                             key={item.id}
                             Title={item.Title}
                             Text={item.Text}
                             ColorText={item.ColorText}
-                            grid={item.grid}
-                            Width={item.Width}
+                            className={item.className}
                         />
                     ))}
                 </div>

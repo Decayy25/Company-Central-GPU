@@ -14,10 +14,8 @@ export default function About() {
             Central GPU adalah platform belanja online barang elektronik untuk kebutuhan sehari-hari atau hobi.
           </h1>
           <AboutContainer
-            Border={"border-none"}
-            Color={"text-var(--Icy-Aqua)"}
+            Color={"text-var(--Icy-Aqua) border-none"}
           />
-            
           <AboutBlock/>
         </div>
     </section>

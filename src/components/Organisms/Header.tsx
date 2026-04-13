@@ -16,6 +16,7 @@ export default function Header() {
 
         {/* Menu Desktop */}
         <nav className="hidden md:flex gap-8 text-2xl">
+          <a href="#" className="hover:text-[#589c00] transition">Home</a>
           <a href="#" className="hover:text-[#589c00] transition">About</a>
           <a href="#" className="hover:text-[#589c00] transition">Work</a>
           <a href="#" className="hover:text-[#589c00] transition">Tech</a>

@@ -3,17 +3,16 @@ import Button from "../Atoms/Button";
 
 interface AboutContainerProps {
     Color: string;
-    Border: string;
-    Width?: string;
+    className?: string;
 }
 
 export default function AboutContainer(props: AboutContainerProps) {
-    const { Color, Border, Width = "max-w-7xl" } = props;
+    const { Color, className = "max-w-7xl" } = props;
 
     return (
         <Fragment>
             <div
-                className={`${Width} mx-auto px-4 md:px-8 py-12 ${Border}`}
+                className={`${className} mx-auto px-4 md:px-8 py-12 `}
             >
                 <p className={`${Color} mx-2 text-xl`}>
                     Diluncurkan tahun 2026, Central GPU merupakan sebuah 
@@ -22,8 +21,7 @@ export default function AboutContainer(props: AboutContainerProps) {
                     pelanggan melalui dukungan pembayaran dan logistik yang kuat.
                 </p>
                 <Button 
-                    Hover={"hover:bg-[var(--Nvidia)]"}
-                    Width={"w-64"}
+                    className={"hover:bg-(--Nvidia) w-64 transition"}
                     Title="Shop now"
                 />
             </div>
