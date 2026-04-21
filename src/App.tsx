@@ -8,6 +8,7 @@ import Footer from "./components/Organisms/Footer"
 
 // pages
 import About from './pages/About';
+import Journey from "./pages/Journey";
 
 export default function App() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +25,8 @@ export default function App() {
       
       <Routes>
         <Route path="/" element={<About />} />
+        <Route path="/journey" element={<Journey />} />
+
       </Routes>
 
       <Footer />
