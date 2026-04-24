@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom"
 
 import logo from "../../assets/material/Logo-Header.png";
 
@@ -17,9 +18,9 @@ export default function Header() {
         {/* Menu Desktop */}
         <nav className="hidden md:flex gap-8 text-2xl">
           <a href="#" className="hover:text-[#589c00] transition">Home</a>
-          <a href="#" className="hover:text-[#589c00] transition">About</a>
-          <a href="#" className="hover:text-[#589c00] transition">Work</a>
-          <a href="#" className="hover:text-[#589c00] transition">Tech</a>
+          <Link to="#" className="hover:text-[#589c00] transition">About</Link>
+          <Link to="#" className="hover:text-[#589c00] transition">Work</Link>
+          <Link to="#" className="hover:text-[#589c00] transition">Tech</Link>
         </nav>
 
         {/* Hamburger Button */}

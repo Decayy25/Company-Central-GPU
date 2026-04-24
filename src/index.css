@@ -11,3 +11,8 @@
   --Ocean-Mist: #6abea7;
   --Blue-Slate: #5e6973;
 }
+
+.Background-custom {
+  background-image: url("./assets/material/office.png");
+  background-size: cover;
+}

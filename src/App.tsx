@@ -7,7 +7,8 @@ import Footer from "./components/Organisms/Footer"
 // import LoadingScreen from "./components/LoadingScreen"
 
 // pages
-import About from './pages/About';
+import Home from "./pages/Home";
+// import About from './pages/About';
 import Journey from "./pages/Journey";
 
 export default function App() {
@@ -24,7 +25,7 @@ export default function App() {
       <Header />
       
       <Routes>
-        <Route path="/" element={<About />} />
+        <Route path="/" element={<Home />} />
         <Route path="/journey" element={<Journey />} />
 
       </Routes>
