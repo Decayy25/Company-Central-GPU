@@ -17,8 +17,8 @@ export default function Header() {
 
         {/* Menu Desktop */}
         <nav className="hidden md:flex gap-8 text-2xl">
-          <a href="#" className="hover:text-[#589c00] transition">Home</a>
-          <Link to="#" className="hover:text-[#589c00] transition">About</Link>
+          <a href="/" className="hover:text-[#589c00] transition">Home</a>
+          <Link to="/about" className="hover:text-[#589c00] transition">About</Link>
           <Link to="#" className="hover:text-[#589c00] transition">Work</Link>
           <Link to="#" className="hover:text-[#589c00] transition">Tech</Link>
         </nav>

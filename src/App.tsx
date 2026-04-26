@@ -8,7 +8,7 @@ import Footer from "./components/Organisms/Footer"
 
 // pages
 import Home from "./pages/Home";
-// import About from './pages/About';
+import About from "./pages/About";
 import Journey from "./pages/Journey";
 
 export default function App() {
@@ -26,6 +26,7 @@ export default function App() {
       
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/journey" element={<Journey />} />
 
       </Routes>

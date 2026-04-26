@@ -23,6 +23,7 @@ export default function AboutContainer(props: AboutContainerProps) {
                 <Button 
                     className={"hover:bg-(--Nvidia) w-64 transition"}
                     Title="Shop now"
+                    href="https://e-commerce-central-gpu.vercel.app/"
                 />
             </div>
         </Fragment>

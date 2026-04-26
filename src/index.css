@@ -1,4 +1,4 @@
-@import url('https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url("https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
 @import "tailwindcss";
 
 :root {
@@ -6,13 +6,62 @@
   --Radeon: #e9001d;
   --Nvidia: #589c00;
   --Icy-Aqua: #bdfffd;
-  --Soft-Cyan: #9FFFF5;
+  --Soft-Cyan: #9ffff5;
   --Aquamarine: #7cffc4;
   --Ocean-Mist: #6abea7;
   --Blue-Slate: #5e6973;
 }
 
-.Background-custom {
+body {
   background-image: url("./assets/material/office.png");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.hex-border {
+  padding: 4px;
+  overflow: hidden;
+  position: fixed;
+  margin-bottom: 2px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hex-border::before {
+  content: "";
+  position: absolute;
+  inset: -200%;
+  background: conic-gradient(
+    from 270deg,
+    var(--Ocean-Mist),
+    var(--Intel),
+    var(--Ocean-Mist),
+    var(--Radeon),
+    var(--Ocean-Mist),
+    var(--Nvidia),
+    var(--Ocean-Mist)
+  );
+  animation: rotateBorder 2s linear infinite;
+  z-index: -1;
+}
+
+.hex-border > * {
+  position: relative;
+  border-radius: 55%;
+  z-index: 1;
+}
+
+@keyframes rotateBorder {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
