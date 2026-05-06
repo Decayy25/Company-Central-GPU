@@ -1,5 +1,6 @@
 import AboutContainer from "../components/Templates/ContainerAbout"
 import AboutBlock from "../components/Templates/AboutBlock"
+import Journey from "./Journey";
 
 
 export default function About() {
@@ -12,6 +13,7 @@ export default function About() {
           </h1>
           <AboutContainer Color={"text-var(--Icy-Aqua) border-none"} />
           <AboutBlock />
+          <Journey />
         </div>
       </section>
   );
